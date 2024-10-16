@@ -24,9 +24,16 @@
         android:id="@+id/imageView6"
         android:layout_width="71dp"
         android:layout_height="77dp"
-        app:srcCompat="@drawable/masterCard"
+        app:srcCompat="@drawable/mastercard"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="248dp" />
+        tools:layout_editor_absoluteY="248dp"
+
+        app:layout_constraintTop_toTopOf="@+id/creditCardContainer"
+        app:layout_constraintEnd_toEndOf="@id/creditCardContainer"
+        android:layout_marginEnd="15dp"
+        android:layout_marginVertical="15dp"
+        />
 
     <TextView
         android:id="@+id/txtTitle"
@@ -57,19 +64,19 @@
         android:id="@+id/editNumberCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginHorizontal="50dp"
         android:background="@android:color/transparent"
+        android:digits="123456789"
+        android:inputType="number"
+        android:maxLength="19"
+        android:minHeight="48dp"
         android:text="1234 5678 9101 1121"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:inputType="number"
-        android:digits="123456789"
-        android:maxLength="19"
-        app:layout_constraintTop_toBottomOf="@id/txtCardNumber"
-        app:layout_constraintStart_toStartOf="@id/creditCardContainer"
         app:layout_constraintEnd_toEndOf="@id/creditCardContainer"
-        android:layout_marginHorizontal="50dp"
-    />
+        app:layout_constraintStart_toStartOf="@id/creditCardContainer"
+        app:layout_constraintTop_toBottomOf="@id/txtCardNumber" />
 
     <TextView
         android:id="@+id/txtMesEAno"
@@ -87,19 +94,19 @@
         android:id="@+id/editMesEAno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginHorizontal="50dp"
         android:background="@android:color/transparent"
+        android:digits="123456789"
+        android:inputType="number"
+        android:maxLength="5"
+        android:minHeight="48dp"
         android:text="04/24"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:inputType="number"
-        android:digits="123456789"
-        android:maxLength="5"
-        app:layout_constraintTop_toBottomOf="@id/txtMesEAno"
-        app:layout_constraintStart_toStartOf="@id/creditCardContainer"
         app:layout_constraintEnd_toEndOf="@id/creditCardContainer"
-        android:layout_marginHorizontal="50dp"
-        />
+        app:layout_constraintStart_toStartOf="@id/creditCardContainer"
+        app:layout_constraintTop_toBottomOf="@id/txtMesEAno" />
 
 
     <TextView
@@ -118,17 +125,17 @@
         android:id="@+id/editCVV"
         android:layout_width="57dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:background="@android:color/transparent"
+        android:digits="123456789"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
         android:text="789"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:inputType="number"
-        android:digits="123456789"
-        android:maxLength="3"
-        app:layout_constraintTop_toBottomOf="@id/txtCVV"
         app:layout_constraintEnd_toEndOf="@id/creditCardContainer"
 
-        />
+        app:layout_constraintTop_toBottomOf="@id/txtCVV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
