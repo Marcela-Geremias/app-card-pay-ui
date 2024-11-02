@@ -24,7 +24,7 @@
         android:id="@+id/imageView6"
         android:layout_width="71dp"
         android:layout_height="77dp"
-        app:srcCompat="@drawable/mastercard"
+        app:srcCompat="@drawable/mastercard1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="291dp"
         tools:layout_editor_absoluteY="248dp"
