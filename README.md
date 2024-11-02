@@ -5,7 +5,7 @@
 Credit card interface in Android Studio, using the Kotlin programming language with automatic formatting in the card number field.
 ## Layout
 <div align="center">
-  <img src="imagens/App_Cartao1.png.png" alt="App Screenshot" width="400"/>
+  <img src="imagens/App_Cartao1.png" alt="App Screenshot" width="400"/>
 </div>
 
 ## Technologies Used
